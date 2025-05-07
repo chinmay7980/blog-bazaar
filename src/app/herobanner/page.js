@@ -10,7 +10,6 @@ export default function HeroBanner() {
           src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
           alt="Hero"
           fill
-        //   style={{ objectFit: 'cover' }}
         />
         <div className="hero-content">
           <span className="hero-tag">Technology</span>

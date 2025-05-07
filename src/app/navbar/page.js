@@ -11,9 +11,9 @@ export default function Navbar() {
         </div>
         <div className='navbar-components'>
           <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="./about">About</Link>
+          <Link href="./services">Services</Link>
+          <Link href="./contact">Contact</Link>
         </div>
       </div>
     </nav>

@@ -8,7 +8,7 @@ export default function HeroBanner() {
       <div className="hero-banner">
         <Image
           src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
-          alt="Hero"
+          alt="image"
           fill
         />
         <div className="hero-content">

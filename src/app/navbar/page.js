@@ -9,11 +9,13 @@ export default function Navbar() {
         <div className='logo'>
             <Link href="/" className='logo-link'>Blog-Bazaar</Link>
         </div>
+        
         <div className='navbar-components'>
           <Link href="/">Home</Link>
           <Link href="./about">About</Link>
           <Link href="./services">Services</Link>
           <Link href="./contact">Contact</Link>
+          <Link href="./login">Login</Link>
         </div>
       </div>
     </nav>

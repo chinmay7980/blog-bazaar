@@ -11,6 +11,13 @@
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 10px black;
+    cursor: pointer;
+    display: block;
+    transition:transform 0.5s ease-in-out;
+  }
+  .hero-banner:hover {
+    transform: scale(1.06);
+    
   }
   
   .hero-content {

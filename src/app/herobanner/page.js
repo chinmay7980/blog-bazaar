@@ -1,10 +1,11 @@
-
+import Link from 'next/link';
 import Image from 'next/image';
 import './page.css';
 
 export default function HeroBanner() {
   return (
     <section className="hero-box">
+      <Link href="./blog1">
       <div className="hero-banner">
         <Image
           src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
@@ -22,6 +23,7 @@ export default function HeroBanner() {
           </div>
         </div>
       </div>
+      </Link>
     </section>
   );
 }

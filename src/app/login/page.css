@@ -6,6 +6,7 @@
     background: url("https://www.bluekraft.in/wp-content/uploads/2025/04/Zugpsitze_mountain.jpg");
     min-width: 100vw;
     background-size: cover;
+    background-position: center;
     /* background-color: whitesmoke; */
 }
 .form {
@@ -56,3 +57,6 @@
     background-color: #175bb3;
 
 }
+
+  
+  

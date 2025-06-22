@@ -3,6 +3,7 @@
 
 import HeroBanner from "./herobanner/page";
 import Navbar from "./navbar/page";
+import Posts from "./posts_grid/page";
 
 
 
@@ -11,6 +12,7 @@ export default function Home() {
     <div>
       <Navbar />
       <HeroBanner />
+      <Posts />
       
 
 

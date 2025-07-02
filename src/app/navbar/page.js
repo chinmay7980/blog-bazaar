@@ -15,6 +15,12 @@ export default function Navbar() {
           <Link href="./about">About</Link>
           <Link href="./contact">Contact</Link>
           <Link href="./login">Login</Link>
+          
+        </div>
+
+        <div className='search-bar'>
+          <input type='text' placeholder='Search...' className='search-input' />
+          
         </div>
       </div>
     </nav>

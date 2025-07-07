@@ -1,48 +1,32 @@
-"use client"
+import { SignIn } from '@clerk/nextjs';
 import './page.css';
-import { useState } from 'react';
+import Navbar from '../navbar/page';
+import Footer from '../footer/page';
 
-export default function Login(){
-    const [email,setemail] = useState('')
-    const [password,setpassword] = useState('')
-
-    function handle(e){
-        e.preventDefault()
-        console.log("Email:",email,"Password:",password)
-        setemail("")
-        setpassword("")
-    }
+export default function Login() {
     return (
         <div className='container'>
-            <form className='form'>
-                <h1 className='title'>LOGIN</h1>
+            <Navbar />
 
-                <div className='group'>
-                    <label>Email:</label>
-                    <input 
-                        type='email'
-                        id='email'
-                        placeholder="Your Email"
-                        value={email}
-                        onChange={(e)=>setemail(e.target.value)}
-                        required
+            <div className='login-content'>
+                <div className='clerk-signin-wrapper'>
+                    
+                    <SignIn
+                        appearance={{
+                            elements: {
+                                formButtonPrimary: 'button',
+                                card: 'clerk-card',
+                                headerTitle: 'clerk-title',
+                                formFieldInput: 'clerk-input'
+                            }
+                        }}
+                        fallbackRedirectUrl="/"
+                        forceRedirectUrl="/"
                     />
                 </div>
+            </div>
 
-                <div className='group'>
-                    <label>Password:</label>
-                    <input 
-                        type='password'
-                        id='password'
-                        placeholder="Your Password"
-                        value={password}
-                        onChange={(e)=>setpassword(e.target.value)}
-                        required
-                    />
-                </div>
-
-                <button type='submit' className='button' onClick={handle}>Sign In</button>
-            </form>
+            <Footer />
         </div>
     )
 }

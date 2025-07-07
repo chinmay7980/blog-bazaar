@@ -1,5 +1,6 @@
 import "./page.css";
 import Navbar from "../navbar/page";
+import Footer from "../footer/page";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 export default function ContactPage() {
   const contactInfo = [
@@ -110,6 +111,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

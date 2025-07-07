@@ -1,8 +1,11 @@
 
 import Link from 'next/link';
 import './page.css'
+import { UserButton } from '@clerk/nextjs'
+import { currentUser } from '@clerk/nextjs/server'
 
-export default function Navbar() {
+export default async function Navbar() {
+  const user = await currentUser()
   return (
     <nav>
       <div className='navbar'>
@@ -14,8 +17,14 @@ export default function Navbar() {
           <Link href="/">Home</Link>
           <Link href="./about">About</Link>
           <Link href="./contact">Contact</Link>
-          <Link href="./login">Login</Link>
-          
+          {user ? (
+            <>
+              
+              <UserButton />
+            </>
+          ) : (
+            <Link href="./login">Login</Link>
+          )}
         </div>
 
         <div className='search-bar'>

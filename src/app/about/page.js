@@ -1,5 +1,6 @@
 import "./page.css";
 import Navbar from "../navbar/page";
+import Footer from "../footer/page";
 import { Users, Target, Heart, Award } from "lucide-react";
 import Image from "next/image";
 
@@ -163,6 +164,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

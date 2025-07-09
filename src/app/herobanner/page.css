@@ -1,52 +1,86 @@
-.hero-box {
-  display: flex;
-  justify-content: center;
-  padding: 40px 0;
-  }
-  
-.hero-banner {
+.herobanner-container {
   position: relative;
-  width: 900px;
-  height: 400px;
-  border-radius: 12px;
+  width: 80%;
+  margin: 0 auto;
+  height: 450px;
+  border-radius: 2rem;
   overflow: hidden;
-  box-shadow: 0 4px 10px black;
-  cursor: pointer;
-  display: block;
-  transition:transform 0.5s ease-in-out;
-  }
-.hero-banner:hover {
-  transform: scale(1.06);
-    
-  }
-  
-.hero-content {
+  margin-bottom: 4rem;
+}
+
+.herobanner-container:hover .hero-image {
+  transform: scale(1.05);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+
+.herobanner-content {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  max-width: 80%;
-  }
-  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+}
+
+.hero-inner {
+  max-width: 64rem;
+}
+
 .hero-tag {
-  background-color: blue;
-  padding: 4px 8px;
-  font-size: 12px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-bottom: 10px;
-  }
   
-.hero-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  }
-  
-.hero-author {
-  font-size: 18px;
+  background-color: #2563eb;
   color: white;
+  border-radius: 1rem;
+  padding: 3px;
+}
+
+.herobanner-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.herobanner-subtitle {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  max-width: 40rem;
+}
+.hero-meta {
   display: flex;
-  gap: 10px;
-  }
+  gap: 1.5rem;
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-meta-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+.hero-button {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.125rem;
+  cursor: pointer;
   
+  
+}
+.hero-button:hover {
+  background-color: #f3f4f6;
+}

@@ -12,6 +12,7 @@ export default function Login() {
                 <div className='clerk-signin-wrapper'>
                     
                     <SignIn
+                        routing="hash"
                         appearance={{
                             elements: {
                                 formButtonPrimary: 'button',

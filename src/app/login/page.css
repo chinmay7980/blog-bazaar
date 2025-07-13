@@ -16,33 +16,88 @@
 
 
 .clerk-signin-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 2rem;
-    width: 100%;
-    max-width: 400px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 
 
-
-   
-
-
-
-/* Clerk component styling */
 .clerk-card {
     background-color: transparent !important;
     box-shadow: none !important;
     border: none !important;
+    padding: 1rem !important;
+    
 }
 
 .clerk-title {
-    display: none !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #1a1a1a !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
 }
 
 .clerk-input {
     width: 100% !important;
-    padding: 10px !important;
-    border: 1px solid black !important;
-    border-radius: 10px !important;
+    padding: 12px 16px !important;
+    border: 2px solid #e5e5e5 !important;
+    border-radius: 8px !important;
     font-size: 1rem !important;
+    transition: border-color 0.2s ease !important;
+}
+
+.clerk-input:focus {
+    border-color: #3b82f6 !important;
+    outline: none !important;
+}
+
+
+.cl-formButtonPrimary {
+    background-color: #3b82f6 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 12px 24px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    width: 100% !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.cl-formButtonPrimary:hover {
+    background-color: #2563eb !important;
+}
+
+.cl-card {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    
+}
+
+.cl-headerTitle {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #1a1a1a !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+}
+
+.cl-socialButtonsBlockButton {
+    border: 2px solid #e5e5e5 !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    transition: border-color 0.2s ease !important;
+}
+
+.cl-socialButtonsBlockButton:hover {
+    border-color: #3b82f6 !important;
 }

@@ -12,14 +12,12 @@
 .title {
     font-size: 1.25rem; 
     font-weight: 600;
-    color: #1f2937;
     line-height: 1.4;
     margin-bottom: 0.5rem; 
 }
   
 .author-date {
     font-size: 0.75rem;
-    color: #6b7280;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -32,6 +30,9 @@
     display: flex;
     flex-direction: column;
     border: 1px solid #E8E8EA;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 .card:hover{
     transform: translateY(-5px);
@@ -69,15 +70,11 @@
 .title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #1f2937;
     line-height: 1.4;
     margin-bottom: 0.5rem;
 }
 
-.title:hover {
-    color: #374151;
-    text-decoration: underline;
-}
+
 
 .author-date {
     font-size: 0.75rem;
@@ -88,14 +85,6 @@
     gap: 0.5rem;
 }
 
-@media (max-width: 768px) {
-    .title {
-        font-size: 1rem;
-    }
-    .author-date {
-        font-size: 0.65rem;
-    }
-}
 
 
 

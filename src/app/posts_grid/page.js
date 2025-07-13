@@ -84,8 +84,10 @@ export default function Posts(){
             <section className='posts'>
                 {posts.map((post)=>{
                 return (
-                    <div key={post.id} className="card">
+                    <Link key={post.id} href={`/blogpost/${post.id}`} className="card">
+
                         <div className='image'>
+
                             <Image
                                 src={post.image}
                                 alt={post.title}
@@ -93,8 +95,11 @@ export default function Posts(){
                                 height={100}
                                 style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
                             />
+
                         </div>
+
                         <div className="content">
+                          
                             <span className="category">{post.category}</span>
 
                             <h3 className="title">{post.title}</h3>
@@ -103,9 +108,9 @@ export default function Posts(){
                                 {post.author && <span className="author">{post.author}</span>}
                                 {post.date && <span className="date">{post.date}</span>}
                             </div>
+
                         </div>
-                    
-                    </div>
+                    </Link>
 
                     
             )

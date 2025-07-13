@@ -33,7 +33,7 @@
 }
 
 .hero-tag {
-  
+  display: inline-block;
   background-color: #2563eb;
   color: white;
   border-radius: 1rem;

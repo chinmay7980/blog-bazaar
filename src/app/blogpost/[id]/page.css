@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.blog-post-container {
+  min-height: 100vh;
+ 
+}
+
+.blog-post-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+
+.back-nav {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #3b82f6;
+}
+
+.back-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+
+.article-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.category-badge {
+  margin-bottom: 2rem;
+}
+
+.category {
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.category-technology { background-color: #3b82f6; }
+.category-lifestyle { background-color: #10b981; }
+.category-photography { background-color: #f59e0b; }
+.category-design { background-color: #06b6d4; }
+.category-self-improvement { background-color: #8b5cf6; }
+
+.article-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: black;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.meta-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+
+.article-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #e5e5e5;
+  border-radius: 25px;
+  background: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.action-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.image {
+  margin-bottom: 3rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.article-content {
+  margin-bottom: 3rem;
+}
+
+.content-body {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.content-body p {
+  margin-bottom: 1.5rem;
+}
+
+.content-body h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1rem 0;
+  line-height: 1.3;
+}
+
+.content-body h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+}
+
+.content-body ul, .content-body ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.content-body li {
+  margin-bottom: 0.5rem;
+}
+
+
+.article-tags {
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid gray;
+}
+
+.article-tags h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tags-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tag {
+  padding: 0.4rem 1rem;
+  background-color: #f3f4f6;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #e5e7eb;
+}
+
+
+.related-posts {
+  padding: 2rem 0;
+  border-top: 1px solid gray;
+}
+
+.related-posts h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.related-card {
+  display: block;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  
+}
+
+.related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.related-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.related-content {
+  padding: 1.5rem;
+}
+
+.related-content .category {
+  font-size: 0.75rem;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+}
+
+.related-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.related-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+

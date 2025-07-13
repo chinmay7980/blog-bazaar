@@ -3,6 +3,7 @@ import Link from 'next/link';
 import './page.css'
 import { UserButton } from '@clerk/nextjs'
 import { currentUser } from '@clerk/nextjs/server'
+import SearchBar from '@/components/SearchBar'
 
 export default async function Navbar() {
   const user = await currentUser()
@@ -27,10 +28,7 @@ export default async function Navbar() {
           )}
         </div>
 
-        <div className='search-bar'>
-          <input type='text' placeholder='Search...' className='search-input' />
-          
-        </div>
+        <SearchBar />
       </div>
     </nav>
   );

@@ -101,3 +101,101 @@
 .cl-socialButtonsBlockButton:hover {
     border-color: #3b82f6 !important;
 }
+
+
+@media (max-width: 1024px) {
+    .login-content {
+        padding: 1.5rem;
+    }
+
+    .clerk-signin-wrapper {
+        width: 95%;
+        max-width: 550px;
+        padding: 1.8rem;
+    }
+
+    .clerk-title, .cl-headerTitle {
+        font-size: 1.8rem !important;
+        margin-bottom: 1.8rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-content {
+        padding: 1rem;
+    }
+
+    .clerk-signin-wrapper {
+        width: 95%;
+        max-width: 500px;
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    .clerk-title,.cl-headerTitle {
+        font-size: 1.6rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .clerk-input {
+        padding: 10px 14px !important;
+        font-size: 0.95rem !important;
+    }
+
+    .cl-formButtonPrimary {
+        padding: 10px 20px !important;
+        font-size: 0.95rem !important;
+    }
+
+    .cl-socialButtonsBlockButton {
+        padding: 10px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        min-width: 100vw;
+    }
+
+    .login-content {
+        padding: 0.5rem;
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+
+    .clerk-signin-wrapper {
+        width: 100%;
+        max-width: none;
+        padding: 1rem;
+        margin: 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .clerk-card {
+        padding: 0.5rem !important;
+    }
+
+    .clerk-title,.cl-headerTitle {
+        font-size: 1.4rem !important;
+        margin-bottom: 1.2rem !important;
+    }
+
+    .clerk-input {
+        padding: 8px 12px !important;
+        font-size: 0.9rem !important;
+        border-radius: 6px !important;
+    }
+
+    .cl-formButtonPrimary {
+        padding: 8px 16px !important;
+        font-size: 0.9rem !important;
+        border-radius: 6px !important;
+    }
+
+    .cl-socialButtonsBlockButton {
+        padding: 8px !important;
+        border-radius: 6px !important;
+    }
+}
+

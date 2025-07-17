@@ -1,9 +1,9 @@
 
 import Link from 'next/link';
 import './page.css'
-import { UserButton } from '@clerk/nextjs'
 import { currentUser } from '@clerk/nextjs/server'
-import SearchBar from '@/components/SearchBar'
+import SearchBar from '../../components/SearchBar'
+import UserSection from '../../components/UserSection'
 
 export default async function Navbar() {
   const user = await currentUser()
@@ -13,19 +13,12 @@ export default async function Navbar() {
         <div className='logo'>
             <Link href="/" className='logo-link'>Blog-Bazaar</Link>
         </div>
-        
+
         <div className='navbar-components'>
           <Link href="/">Home</Link>
           <Link href="./about">About</Link>
           <Link href="./contact">Contact</Link>
-          {user ? (
-            <>
-              
-              <UserButton />
-            </>
-          ) : (
-            <Link href="./login">Login</Link>
-          )}
+          <UserSection user={user} />
         </div>
 
         <SearchBar />

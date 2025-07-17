@@ -2,10 +2,19 @@
 
 module.exports = {
     images: {
-      domains: [
-        'images.unsplash.com',
-        'plus.unsplash.com',
-        'wallpapers.com' // already added earlier
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'images.unsplash.com',
+        },
+        {
+          protocol: 'https',
+          hostname: 'plus.unsplash.com',
+        },
+        {
+          protocol: 'https',
+          hostname: 'wallpapers.com',
+        },
       ],
     },
   };

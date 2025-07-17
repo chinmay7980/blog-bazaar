@@ -3,12 +3,18 @@ nav {
   background-color: #ffffffcc;
   padding: 12px 24px;
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
 }
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo-link {
@@ -49,3 +55,82 @@ nav {
   color: blue;
   text-decoration: none;
 }
+
+
+
+@media (max-width: 1024px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  .navbar-components a {
+    margin: 0 15px;
+    font-size: 0.95rem;
+  }
+
+  .search-input {
+    width: 12rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    padding: 8px 16px;
+  }
+
+  .logo-link {
+    font-size: 1.3rem;
+  }
+
+  .navbar-components a {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+
+  .search-input {
+    width: 10rem;
+    padding: 4px;
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  nav {
+    padding: 6px 12px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo-link {
+    font-size: 1.2rem;
+  }
+
+  .navbar-components {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .navbar-components a {
+    margin: 0 8px;
+    font-size: 0.85rem;
+  }
+
+  .search-bar {
+    order: 2;
+  }
+
+  .search-input {
+    width: 8rem;
+    padding: 3px;
+    font-size: 0.8rem;
+  }
+}
+

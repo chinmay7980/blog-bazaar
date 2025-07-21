@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import './page.css'
 import { currentUser } from '@clerk/nextjs/server'
